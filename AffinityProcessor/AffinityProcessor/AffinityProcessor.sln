@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AffinityProcessor", "AffinityProcessor.csproj", "{FD4FC0CC-01C1-4FD2-BFE8-4A143E4DD0F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AffinityProcessorTests", "..\AffinityProcessorTests\AffinityProcessorTests.csproj", "{5C949184-4BF5-4855-8B81-FE3BA9B0A45E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD4FC0CC-01C1-4FD2-BFE8-4A143E4DD0F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4FC0CC-01C1-4FD2-BFE8-4A143E4DD0F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4FC0CC-01C1-4FD2-BFE8-4A143E4DD0F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4FC0CC-01C1-4FD2-BFE8-4A143E4DD0F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C949184-4BF5-4855-8B81-FE3BA9B0A45E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C949184-4BF5-4855-8B81-FE3BA9B0A45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C949184-4BF5-4855-8B81-FE3BA9B0A45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C949184-4BF5-4855-8B81-FE3BA9B0A45E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessor\bin\Debug\AffinityProcessor.dll
+C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessor\bin\Debug\AffinityProcessor.pdb
+C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessor\obj\Debug\AffinityProcessor.csprojResolveAssemblyReference.cache
+C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessor\obj\Debug\AffinityProcessor.dll
+C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessor\obj\Debug\AffinityProcessor.pdb
