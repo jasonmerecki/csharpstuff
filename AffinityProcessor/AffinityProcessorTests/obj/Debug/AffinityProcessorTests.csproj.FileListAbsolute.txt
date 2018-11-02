@@ -1,8 +1,0 @@
-C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessorTests\obj\Debug\AffinityProcessorTests.csprojResolveAssemblyReference.cache
-C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessorTests\bin\Debug\AffinityProcessorTests.dll
-C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessorTests\bin\Debug\AffinityProcessorTests.pdb
-C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessorTests\bin\Debug\AffinityProcessor.dll
-C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessorTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessorTests\bin\Debug\AffinityProcessor.pdb
-C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessorTests\obj\Debug\AffinityProcessorTests.dll
-C:\workspaces\jason\csharpstuff\AffinityProcessor\AffinityProcessorTests\obj\Debug\AffinityProcessorTests.pdb
