@@ -158,8 +158,27 @@ namespace jasonmerecki.AffinityStrategy
 			Console.WriteLine("Done with test!");
 		}
 
-		// encapsulates some information about the work done inside the affinity processor
-		private class WorkUnitInfo
+	    [TestMethod]
+	    public void TestAffinityProcessorSendParams()
+	    {
+	        foreach (AffinityStrategy strat in Enum.GetValues(typeof(AffinityStrategy)))
+	        {
+	            AffinityProcessor ap = new AffinityProcessor(strat, 3);
+	            ConcurrentQueue<WorkUnitInfo> outputWorks = new ConcurrentQueue<WorkUnitInfo>();
+	            WorkUnit workUnit = new WorkUnit(outputWorks, "Doug Glatt", 0);
+	            ThreadStart player1 = () => { workUnit.DoWorkWith("Steve Yzerman"); };
+	            ap.SubmitWork("hockey", player1);
+	            ap.Shutdown(0); // wait indefinitely 
+	            Assert.AreEqual(1, outputWorks.Count, "Not enough work units in the list.");
+	            WorkUnitInfo info;
+	            outputWorks.TryDequeue(out info);
+	            Assert.IsTrue(info.workOutput.Equals("Steve Yzerman"), "Didn't find the right player!");
+	            Console.WriteLine("Done with test!");
+	        }
+	    }
+
+        // encapsulates some information about the work done inside the affinity processor
+        private class WorkUnitInfo
 		{
 			private int threadId = Thread.CurrentThread.GetHashCode();
 			public int ThreadId
@@ -181,19 +200,23 @@ namespace jasonmerecki.AffinityStrategy
 				this.maxWaitTime = maxWaitTime;
 			}
 
-			public void DoWork()
-			{
-				WorkUnitInfo i = new WorkUnitInfo();
-				i.workOutput = this.workOutput;
-				Console.WriteLine(workOutput);
-				if (maxWaitTime > 0)
-				{
-					// todo: make this a random time
-					Thread.Sleep(maxWaitTime);
-				}
-				outputWorks.Enqueue(i);
-			}
-		}
+		    public void DoWork()
+		    {
+		        DoWorkWith(this.workOutput);
+		    }
+		    public void DoWorkWith(string workOutput)
+		    {
+		        WorkUnitInfo i = new WorkUnitInfo();
+		        i.workOutput = workOutput;
+		        Console.WriteLine(workOutput);
+		        if (maxWaitTime > 0)
+		        {
+		            // todo: make this a random time
+		            Thread.Sleep(maxWaitTime);
+		        }
+		        outputWorks.Enqueue(i);
+		    }
+        }
 
 		
 	}
